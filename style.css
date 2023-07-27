@@ -143,3 +143,21 @@ hr {
 .fa-star.empty {
   color: #aeaeae;
 }
+
+/* media queries */
+
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+}
